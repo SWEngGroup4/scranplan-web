@@ -7,7 +7,10 @@
     <title>scranplan-web</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/DocStyles.css">
     <link rel="stylesheet" href="assets/css/Features-Clean.css">
     <link rel="stylesheet" href="assets/css/gradient-navbar-1.css">
@@ -21,11 +24,16 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="scranplan.html">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="developers.html">Developers</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="documentation.html">Documentation</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
                 </ul>
         </div>
         </div>
@@ -33,21 +41,31 @@
     <div class="alert alert-info text-center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span class="text-center">Hint: Click on a banner to display each individual&nbsp; document</span></div><script>
         /*Detects when a documentation header is pressed and returns it's corresponding
         index in the array of class 'spoiler' expanding the spoiler outwards.*/
-        function documentationHeaderPressed(index) {
+        function documentationHeaderPressed(index, fullHeight) {
           var spoiler = document.getElementsByClassName("spoiler");
 
           for (var i in spoiler){
             if(i == index){ //Only perform action on correct index
               if(spoiler[i].style.maxHeight == "0px"){
-                spoiler[i].style.maxHeight = "850px"; //Set a new limit for the max height causing the spoiler to expand.
+                if(!fullHeight){
+                    spoiler[i].style.maxHeight = "850px";
+                } else {
+                    spoiler[i].style.maxHeight = "100%";
+                } //Set a new limit for the max height causing the spoiler to expand.
               } else if(spoiler[i].style.maxHeight == ""){ //Executes for the first time. No value of 'maxHeight' initially set.
-                spoiler[i].style.maxHeight = "850px";
+                if(!fullHeight){
+                    spoiler[i].style.maxHeight = "850px";
+                } else {
+                    spoiler[i].style.maxHeight = "100%";
+                }
               } else {
                 spoiler[i].style.maxHeight = "0px"; //Set a new constraint for the max height causing the spoiler to contract.
               }
             }
           }
         }
+    
+
     </script>
 
 
@@ -55,7 +73,7 @@
     <div id="documentation">
     
     <div class="documentationDesc" style="background:#32435e">
-      <div onclick="documentationHeaderPressed(0)" class="docHeader"> <!--Header title banner-->
+      <div onclick="documentationHeaderPressed(0, false)" class="docHeader"> <!--Header title banner-->
         <h3>Functional Specification</h3>
       </div>
       <div class="spoiler"> <!--Class thats expanded upon 'documentationHeader' press-->
@@ -66,7 +84,7 @@
     </div>
 
     <div class="documentationDesc" style="background: #474973">
-      <div onclick="documentationHeaderPressed(1)" class="docHeader">
+      <div onclick="documentationHeaderPressed(1, false)" class="docHeader">
         <h3>QA Manual</h3>
       </div>
       <div class="spoiler">
@@ -78,22 +96,299 @@
     </div>
 
     <div class="documentationDesc" style="background: #325947">
-      <div onclick="documentationHeaderPressed(2)" class="docHeader">
-        <h3>Financial Buissness plan</h3>
+      <div onclick="documentationHeaderPressed(2, false)" class="docHeader">
+        <h3>Testing and Integration plan</h3>
       </div>
       <div class="spoiler">
-        <p>TODO</p>
+          <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1g3HilWqKTi5H_8YrxPPVD4I_3BDvEXF5wflZQiMfBx4/preview"></iframe>
+          </div>
       </div>
     </div>
 
+        <div class="documentationDesc" style="background: #3a4028">
+      <div onclick="documentationHeaderPressed(3, false)" class="docHeader">
+        <h3>Financial buissness plan</h3>
+      </div>
+      <div class="spoiler">
+        <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1LzotrUpVFGHWcT0hjfKfvfCqtRLOFLT96Qw8npCnJ5U/preview"></iframe>
+          </div>
+      </div>
+    </div>
+        
     <div class="documentationDesc" style="background: #3a4d4b">
-      <div onclick="documentationHeaderPressed(3)" class="docHeader">
+      <div onclick="documentationHeaderPressed(4, false)" class="docHeader">
+        <h3>Contracts</h3>
+      </div>
+      <div class="spoiler">
+          <ul style="list-style: none; padding-right: 65px; padding-top: 20px">
+        <li>
+            <button class="button" onclick="location.href='https://drive.google.com/file/d/15GYq5N3DxDx29Q7HQaQYkejGoM-iEyGz/view?usp=sharing'">Contract Agreement</button>
+        </li>
+        <li><button class="button">Form of agreement</button></li>
+        <li><button class="button">Module outsourcing</button></li>
+        <li><button class="button">Group 4 negotiations</button></li>
+          </ul>
+      </div>
+    </div>
+        
+    
+        
+        <div class="documentationDesc" style="background: #633f1e">
+      <div onclick="documentationHeaderPressed(5, false)" class="docHeader">
         <h3>Marketing Plan</h3>
       </div>
       <div class="spoiler">
         <p>TODO</p>
       </div>
     </div>
+        
+        <div class="documentationDesc" style="background: #632c1e">
+      <div onclick="documentationHeaderPressed(6, true)" class="docHeader">
+        <h3>XML Shared Schema</h3>
+      </div>
+      <div class="spoiler">
+          <p></p>
+          <p>Hint: Use the arrow keys to navigate the xml document horizontally</p> 
+          <pre>
+          <code style="color:#ffffff; line-height: 1.5; font-size:14px" >
+&lt;?xml version="1.0"?&gt;
+&lt;schema version="1.0"&gt;
+    &lt;element name="slideshow"&gt;
+        &lt;annotation&gt;
+            &lt;info&gt;
+                Note: i) All coordinates represent the top-left corner of the object in question, as a percentage of the slide size. ii) All widths and heights are percentages of the slide size. iii) All URL's (typically 'urlname') are absolute or relative to current URL. iv) All colour's are represented by a string of the form '#ffffff' where each pair of characters after the hash are the hexadecimal representation of red, green, blue respectively. v) A duration of -1 means forever.
+            &lt;/info&gt;
+        &lt;/annotation&gt;
+        &lt;type&gt;
+            &lt;element name="documentinfo"&gt;
+                &lt;annotation&gt;
+                    &lt;info&gt;
+                        Information on the current document, e.g., author, version.
+                    &lt;/info&gt;
+                &lt;/annotation&gt;
+                &lt;type&gt;
+                    &lt;element name="author" type="string"/&gt;
+					&lt;element name="datemodified" type"string"/&gt;
+                    &lt;element name="version" type="string"/&gt;
+					&lt;element name="totalslides" type="int"/&gt;
+                    &lt;element name="comment" type="string"/&gt;
+                &lt;/type&gt;
+            &lt;/element&gt;
+            &lt;element name="defaults"&gt;
+                &lt;annotation&gt;
+                    &lt;info&gt;
+                        Default look and feel for slides - these elements should be applied by default to all slides.
+                    &lt;/info&gt;
+                &lt;/annotation&gt;
+                &lt;type&gt;
+                    &lt;element name="backgroundcolor" type="string"/&gt;
+                    &lt;element name="font" type="string"/&gt;
+                    &lt;element name="fontsize" type="int"/&gt;
+                    &lt;element name="fontcolor" type="string"/&gt;
+                    &lt;element name="linecolor" type="string"/&gt;
+                    &lt;element name="fillcolor" type="string"/&gt;
+					&lt;element name="slidewidth" type="int"/&gt;
+					&lt;element name="slideheight" type="int"/&gt;
+                &lt;/type&gt;
+            &lt;/element&gt;
+            &lt;element name="slide"&gt;
+                &lt;annotation&gt;
+                    &lt;info&gt;
+                        Individual slide
+                    &lt;/info&gt;
+                &lt;/annotation&gt;
+                &lt;type&gt;
+                    &lt;attribute name="id" type="string"&gt;
+                        &lt;annotation&gt;
+                            &lt;info&gt;
+                                ID for this slide - could be used to leap around slideshow.
+                            &lt;/info&gt;
+                        &lt;/annotation&gt;
+                    &lt;/attribute&gt;
+					&lt;attribute name="duration" type="int"&gt;
+						&lt;annotation&gt;
+							&lt;type&gt;
+								Period (in milliseconds) for which this slide should be displayed.
+							&lt;/type&gt;
+						&lt;/annotation&gt;
+					&lt;/attribute&gt;
+                    &lt;element name="text" type="string"&gt;
+                        &lt;annotation&gt;
+                            &lt;info&gt;
+                                Text to be displayed.
+                            &lt;/info&gt;
+                        &lt;/annotation&gt;
+                        &lt;type&gt;
+                            &lt;attribute name="font" type="string"/&gt;
+                            &lt;attribute name="fontsize" type="int"/&gt;
+                            &lt;attribute name="fontcolor" type="string"/&gt;
+                            &lt;attribute name="xpos" type="decimal"/&gt;
+                            &lt;attribute name="ypos" type="decimal"/&gt;
+                            &lt;attribute name="starttime" type="int"/&gt;
+								&lt;annotation&gt;
+									&lt;info&gt;
+										Number of milliseconds after slide is loaded that the text should appear.
+									&lt;/info&gt;
+								&lt;/annotation&gt;
+                            &lt;attribute name="endtime" type="int"/&gt;
+								&lt;annotation&gt;
+									&lt;info&gt;
+										Number of milliseconds after slide is loaded that the text should disappear.
+									&lt;/info&gt;
+								&lt;/annotation&gt;
+                            &lt;element name="b" type="string"&gt;
+                                &lt;annotation&gt;
+                                    &lt;info&gt;
+                                        Encapsulates bold text.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                            &lt;/element&gt;
+                            &lt;element name="i" type="string"&gt;
+                                &lt;annotation&gt;
+                                    &lt;info&gt;
+                                        Encapsulates italicised text.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                            &lt;/element&gt;
+                        &lt;/type&gt;
+                    &lt;/element&gt;
+                    &lt;element name="line"&gt;
+                        &lt;annotation&gt;
+                            &lt;info&gt;
+                                Line to be displayed.
+                            &lt;/info&gt;
+                        &lt;/annotation&gt;
+                        &lt;type&gt;
+                            &lt;attribute name="xstart" type="decimal"/&gt;
+                            &lt;attribute name="ystart" type="decimal"/&gt;
+                            &lt;attribute name="xend" type="decimal"/&gt;
+                            &lt;attribute name="yend" type="decimal"/&gt;
+                            &lt;attribute name="linecolor" type="string"/&gt;
+                            &lt;attribute name="starttime" type="int"/&gt;
+                            &lt;attribute name="endtime" type="int"/&gt;
+                        &lt;/type&gt;
+                    &lt;/element&gt;
+                    &lt;element name="shape"&gt;
+                        &lt;annotation&gt;
+                            &lt;info&gt;
+                                Shape to be displayed.
+                            &lt;/info&gt;
+                        &lt;/annotation&gt;
+                        &lt;type&gt;
+                            &lt;attribute name="type" type="'oval'|'rectangle'"/&gt;
+                            &lt;attribute name="xstart" type="decimal"/&gt;
+                            &lt;attribute name="ystart" type="decimal"/&gt;
+                            &lt;attribute name="width" type="decimal"/&gt;
+                            &lt;attribute name="height" type="decimal"/&gt;
+                            &lt;attribute name="fillcolor" type="string"/&gt;
+                            &lt;attribute name="starttime" type="int"/&gt;
+                            &lt;attribute name="endtime" type="int"/&gt;
+                            &lt;element name="shading"&gt;
+                                &lt;annotation&gt;
+                                    &lt;info&gt;
+                                        If present, specifies a gradient fill. Parameters are as described in 'java.awt.GradientPaint'.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                                &lt;type&gt;
+                                    &lt;attribute name="x1" type="int"/&gt;
+                                    &lt;attribute name="y1" type="int"/&gt;
+                                    &lt;attribute name="color1" type="string"/&gt;
+                                    &lt;attribute name="x2" type="int"/&gt;
+                                    &lt;attribute name="y2" type="int"/&gt;
+                                    &lt;attribute name="color2" type="string"/&gt;
+                                    &lt;attribute name="cyclic" type="boolean"/&gt;
+                                &lt;/type&gt;
+                            &lt;/element&gt;
+                        &lt;/type&gt;
+                    &lt;/element&gt;
+                    &lt;element name="audio"&gt;
+                        &lt;annotation&gt;
+                            &lt;info&gt;
+                                Sound to be played, either '.wav' or '.mp3'.
+                            &lt;/info&gt;
+                        &lt;/annotation&gt;
+                        &lt;type&gt;
+                            &lt;attribute name="urlname" type="string"/&gt;
+                            &lt;attribute name="starttime" type="int"&gt;
+                                &lt;annotation&gt;
+                                    &lt;info&gt;
+                                        Number of milliseconds audio should start playing after slide is loaded.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                            &lt;/attribute&gt;
+                            &lt;attribute name="loop" type="boolean"&gt;
+                                &lt;annotation&gt;
+                                    &lt;info&gt;
+                                        Whether the audio should loop for the current slide - loop if set to true.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                            &lt;/attribute&gt;
+                        &lt;/type&gt;
+                    &lt;/element&gt;
+                    &lt;element name="image"&gt;
+                        &lt;annotation&gt;
+                            &lt;info&gt;
+                                Image to be displayed, either GIF or JPEG.
+                            &lt;/info&gt;
+                        &lt;/annotation&gt;
+                        &lt;type&gt;
+                            &lt;attribute name="urlname" type="string"/&gt;
+                            &lt;attribute name="xstart" type="decimal"/&gt;
+                            &lt;attribute name="ystart" type="decimal"/&gt;
+                            &lt;attribute name="width" type="decimal"/&gt;
+                            &lt;attribute name="height" type="decimal"/&gt;
+                            &lt;attribute name="starttime" type="int"/&gt;
+								&lt;annotation&gt;
+                                    &lt;info&gt;
+                                        Number of milliseconds after slide is loaded that the image should appear.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                            &lt;attribute name="endtime" type="int"/&gt;
+								&lt;annotation&gt;
+                                    &lt;info&gt;
+                                        Number of milliseconds after slide is loaded that the image should disappear.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                        &lt;/type&gt;
+                    &lt;/element&gt;
+                    &lt;element name="video"&gt;
+                        &lt;annotation&gt;
+                            &lt;info&gt;
+                                Video to be played.
+                            &lt;/info&gt;
+                        &lt;/annotation&gt;
+                        &lt;type&gt;
+                            &lt;attribute name="urlname" type="string"/&gt;
+                            &lt;attribute name="starttime" type="int"&gt;
+                                &lt;annotation&gt;
+                                    &lt;info&gt;
+                                        Number of milliseconds video should start playing after slide is loaded.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                            &lt;/attribute&gt;
+                            &lt;attribute name="loop" type="boolean"&gt;
+                                &lt;annotation&gt;
+                                    &lt;info&gt;
+                                        Whether the video should loop for the current slide - loop if set to true.
+                                    &lt;/info&gt;
+                                &lt;/annotation&gt;
+                            &lt;/attribute&gt;
+                            &lt;attribute name="xstart" type="decimal"/&gt;
+                            &lt;attribute name="ystart" type="decimal"/&gt;
+                        &lt;/type&gt;
+                    &lt;/element&gt;
+                &lt;/type&gt;
+            &lt;/element&gt;
+        &lt;/type&gt;
+    &lt;/element&gt;
+&lt;/schema&gt;
+          </code>
+          </pre>
+      </div>
+    </div>
+        
     </div>
 </body>
     <script
