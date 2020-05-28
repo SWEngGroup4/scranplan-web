@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>scranplan-web</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/DocStyles.css">
+    <link rel="stylesheet" href="assets/css/Features-Clean.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar-1.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="assets/css/Team-Clean.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#"><img class="img-thumbnail" src="assets/img/codev.PNG" width="80" height="80"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="developers.html">Developers</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Finance.html">Finance</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="documentation.html">Documentation</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="team-clean">
+        <div class="container">
+            <h1 class="display-4 text-center d-xl-flex justify-content-xl-center align-items-xl-center">Finance</h1>
+            <p class="lead text-justify">Throughout the project, CoDev has taken every precaution to ensure that finance is never neglected. Careful financial planning and consideration has been input into all major decisions in order to not only create a product we know our customers
+                will love - but to also ensure that, as a company, we are able to turn a profit and grow. As a start-up beginning our journey, we endevour to build up a strong financial bedrock to which we are able to build a world leading enterprise,
+                filling the void that currently exists within the social realm of cooking.<br></p>
+        </div>
+    </div>
+    <div class="alert alert-info text-center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span class="text-center">Hint: Click on a banner to display each individual&nbsp; document</span></div><script>
+        /*Detects when a documentation header is pressed and returns it's corresponding
+        index in the array of class 'spoiler' expanding the spoiler outwards.*/
+        function documentationHeaderPressed(index, fullHeight) {
+          var spoiler = document.getElementsByClassName("spoiler");
+
+          for (var i in spoiler){
+            if(i == index){ //Only perform action on correct index
+              if(spoiler[i].style.maxHeight == "0px"){
+                if(!fullHeight){
+                    spoiler[i].style.maxHeight = "100%";
+                } else {
+                    spoiler[i].style.maxHeight = "100%";
+                } //Set a new limit for the max height causing the spoiler to expand.
+              } else if(spoiler[i].style.maxHeight == ""){ //Executes for the first time. No value of 'maxHeight' initially set.
+                if(!fullHeight){
+                    spoiler[i].style.maxHeight = "100%";
+                } else {
+                    spoiler[i].style.maxHeight = "100%";
+                }
+              } else {
+                spoiler[i].style.maxHeight = "0px"; //Set a new constraint for the max height causing the spoiler to contract.
+              }
+            }
+          }
+        }
+    
+
+    </script>
+
+
+<body>
+    <div id="documentation">
+
+        <div class="documentationDesc" style="background:#444c38">
+            <div onclick="documentationHeaderPressed(0, false)" class="docHeader"> <!--Header title banner-->
+              <h3>Full Finances Spreadsheet (36 sheets)</h3>
+            </div>
+            <div class="spoiler"> <!--Class thats expanded upon 'documentationHeader' press-->
+              <div class="embed-responsive embed-responsive-4by3">
+      <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/12YRiuwRUs4VyZyv9LGgydVNZ5FYdqoGW/preview"></iframe>
+      </div>
+            </div>
+          </div>
+    
+    <div class="documentationDesc" style="background:#0b6623">
+      <div onclick="documentationHeaderPressed(1, false)" class="docHeader"> <!--Header title banner-->
+        <h3>Financial Business Plan</h3>
+      </div>
+      <div class="spoiler"> <!--Class thats expanded upon 'documentationHeader' press-->
+        <div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1DT89wt4-UzrcmK2Aa2i5KOvkJwrpx4se/preview"></iframe>
+</div>
+      </div>
+    </div>
+
+    <div class="documentationDesc" style="background: #3f704d">
+      <div onclick="documentationHeaderPressed(2, false)" class="docHeader">
+        <h3>Financial Report I</h3>
+      </div>
+      <div class="spoiler">
+        <div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1tqigzKFOPTQIiFR59Wm9BDBsuOOl1tDD/preview">
+            </iframe>
+          </div>
+      </div>
+    </div>
+
+    <div class="documentationDesc" style="background: #01796f">
+      <div onclick="documentationHeaderPressed(3, false)" class="docHeader">
+        <h3>Financial Report II</h3>
+      </div>
+      <div class="spoiler">
+          <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/12UsnLuwoIaALvsgQPgDh0rUcZ89b2c3i/preview"></iframe>
+          </div>
+      </div>
+    </div>
+
+    <div class="documentationDesc" style="background: #2e8b57">
+        <div onclick="documentationHeaderPressed(4, false)" class="docHeader">
+          <h3>Financial Report III</h3>
+        </div>
+        <div class="spoiler">
+            <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1202bLaGVbdecWLfwoBPVOr0qGi_kAZYq/preview"></iframe>
+            </div>
+        </div>
+      </div>
+
+        <div class="documentationDesc" style="background: #00a86b">
+      <div onclick="documentationHeaderPressed(5, false)" class="docHeader">
+        <h3>Financial Summary</h3>
+      </div>
+      <div class="spoiler">
+        <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1qkCzN15kbuFtSnrtTGRRD21ow1q1k3Ej/preview"></iframe>
+          </div>
+      </div>
+    </div>
+        
+    <div class="documentationDesc" style="background: #29ab87">
+      <div onclick="documentationHeaderPressed(6, false)" class="docHeader">
+        <h3>Timesheets</h3>
+      </div>
+      <div class="spoiler">
+          <ul style="list-style: none; padding-right: 65px; padding-top: 20px">
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(7, false)" class="docHeader">
+                  <h3>Project week 34 (May 18, 2020-May 24, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/17H9GJWQr4dsyErh-6qLypJ9ctETiCFaD/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(8, false)" class="docHeader">
+                  <h3>Project week 33 (May 11, 2020-May 17, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/19Y6UNGnLi9-lY3JYbtG3YD_xcpdBYO8u/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(9, false)" class="docHeader">
+                  <h3>Project week 32 (May 4, 2020-May 10, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/19reamBLUn9YYeZ833KkvNvCOZtSH6z6x/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(10, false)" class="docHeader">
+                  <h3>Project week 31 (Apr. 27, 2020-May 3, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1UNbDk4VYerhYQEJahrYqKdcHl0IAMpnG/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(11, false)" class="docHeader">
+                  <h3>Project week 30 (Apr. 20, 2020-Apr. 26, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1h7nn43anPfdeNvHY3QazcFYqqiZlARGA/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(12, false)" class="docHeader">
+                  <h3>Project week 29 (Apr. 13, 2020-Apr. 19, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/18fkJvs0im-HKKu-hNT47fv9ED1DhUBh8/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(13, false)" class="docHeader">
+                  <h3>Project week 28 (Apr. 6, 2020-Apr. 12, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/16mrxyiW0vTmZUjFsQpgfsH3F2bJi9zZp/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(14, false)" class="docHeader">
+                  <h3>Project week 27 (Mar. 30, 2020-Apr. 5, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/168-xeo2Dcq1MlA4-7WVi6mzhXCBRNMV4/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(15, false)" class="docHeader">
+                  <h3>Project week 26 (Mar. 23, 2020-Mar. 29, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1y26ea9TJ99RdsEVfs33Xdy7gBvMG6nAe/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(16, false)" class="docHeader">
+                  <h3>Project week 25 (Mar. 16, 2020-Mar. 22, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1VpfQzGUaQcYsmDwatGtCajyz6Rleovzc/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(17, false)" class="docHeader">
+                  <h3>Project week 24 (Mar. 9, 2020-Mar. 15, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1ihxroKOmMHTWw3JJZ6wutiruyovwcxeh/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(18, false)" class="docHeader">
+                  <h3>Project week 23 (Mar. 2, 2020-Mar. 8, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1h9JHvySU-eXUUkT615UVGL42tYywKQca/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(19, false)" class="docHeader">
+                  <h3>Project week 22 (Feb. 24, 2020-Mar. 1, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1FbB7A7oJRp-8tzm7O6Bs5hohlSVKYdvT/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(20, false)" class="docHeader">
+                  <h3>Project week 21 (Feb. 17, 2020-Feb. 23, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1P_xGW4gnlRleX2K233TL4BDwJ7yPfJeg/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(21, false)" class="docHeader">
+                  <h3>Project week 20 (Feb. 10, 2020-Feb. 16, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1LWvZcHFRJ9y8Bj2uou_i6t08w8PWlsSM/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(22, false)" class="docHeader">
+                  <h3>Project week 19 (Feb. 3, 2020-Feb. 9, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/18PgNXQSFdiecJNLo_Z3PbAbkkbTmAiSt/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(23, false)" class="docHeader">
+                  <h3>Project week 18 (Jan. 27, 2020-Feb. 2, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1YfGcpySWNHgkcGvifAmnEIZuksEiE2WK/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(24, false)" class="docHeader">
+                  <h3>Project week 17 (Jan. 20, 2020-Jan. 26, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/12dy-LWVjj_qT8xqRmNIBUsk3scRgUp3t/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(25, false)" class="docHeader">
+                  <h3>Project week 16 (Jan. 13, 2020-Jan. 19, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1ofdD1AQLyQ-L0d7Xw6GOw8MSopUK83hG/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(26, false)" class="docHeader">
+                  <h3>Project week 10 (Dec. 2, 2019-Dec. 8, 2019)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1pvJKjD39k9qSfVT2pBzXkfzfG7IiVkYH/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(27, false)" class="docHeader">
+                  <h3>Project week 9 (Nov. 25, 2019-Dec. 1, 2019)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1i5KElzyBMRD2bkIkDY4zvHu6t3vDedWD/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(28, false)" class="docHeader">
+                  <h3>Project week 8 (Nov. 18, 2019-Nov. 24, 2019)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iACS1JkybVZbUul_0QAl1SxQOpOCNx2C/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(29, false)" class="docHeader">
+                  <h3>Project week 7 (Nov. 11, 2019-Nov. 17, 2019)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iC8_5GxDR87pAO4wYDkO1gGcKvx34tBX/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(30, false)" class="docHeader">
+                  <h3>Project week 6 (Nov. 4, 2019-Nov. 10, 2019)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iCiK3-l0RGrt08ik0-fVDq0FDtZya_rP/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(31, false)" class="docHeader">
+                  <h3>Project week 5 (Oct. 28, 2019-Nov. 3, 2019)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iLpPDt-jTc3ToruBg5R69D44AWtHHrbq/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(32, false)" class="docHeader">
+                  <h3>Project week 4 (Oct. 21, 2019-Oct. 27, 2019)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iDCjVvflR7IXqzMS2nd1x8whSgZ6QLgA/preview"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+          </ul>
+      </div>
+    </div>
+        
+    
+        
+    <div class="documentationDesc" style="background: #50c878">
+        <div onclick="documentationHeaderPressed(33, false)" class="docHeader">
+          <h3>Future Financial Plan</h3>
+        </div>
+        <div class="spoiler">
+          <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1wGw1kfp91jO173u5vxmxYUP_LSmXGTDr/preview"></iframe>
+            </div>
+        </div>
+      </div>
+        
+       
+        
+    </div>
+</body>
+    <footer
+        class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© CoDev 2020. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        </footer>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
