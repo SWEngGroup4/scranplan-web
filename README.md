@@ -1,2 +1,4 @@
 # scranplan-web
-Scran Plan Website
+Scran Plan HTML Tour
+
+Start with index.html
