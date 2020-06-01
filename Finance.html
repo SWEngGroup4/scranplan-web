@@ -12,9 +12,9 @@
     <link rel="icon" type="image/png" sizes="2000x2000" href="assets/img/logo-scran-allgreenbg.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/DocStyles.css">
     <link rel="stylesheet" href="assets/css/Features-Clean.css">
@@ -47,7 +47,27 @@
                 will love - but to also ensure that, as a company, we are able to turn a profit and grow. As a start-up beginning our journey, we endevour to build up a strong financial bedrock to which we are able to build a world leading enterprise,
                 filling the void that currently exists within the social realm of cooking.<br></p>
         </div>
-    </div>
+    </div><ul class="list-group">
+    <li class="list-group-item"><span><strong><span style="text-decoration: underline;">Spreadsheets</span></strong>
+            </span>
+        <ul>
+            <li><a href="documentation/finance/FullScranPlanFinances.xlsx">Full Financial Spreadsheet</a></li>
+            <li><a href="documentation/finance/reports/FinancialReport2-codev-SWEng-group4.xlsx">Financial Report II</a></li>
+            <li><a href="documentation/finance/reports/CoDev (Scran Plan -  SWENG Group 4) Financial report 3.xlsx">Financial Report III</a></li>
+            <li><a href="documentation/finance/reports/CoDev Final Financial Report and Summary.xlsx">Financial Summary</a></li>
+        </ul>
+    </li>
+    <li class="list-group-item"><span><strong><span style="text-decoration: underline;">File Locations</span></strong>
+            </span>
+        <ul>
+            <li><a href="documentation/finance">All Finance Document Files</a></li>
+            <li><a href="documentation/finance/financialBusinessPlans">Business Plans</a></li>
+            <li><a href="documentation/finance/reports">Reports</a></li>
+            <li><a href="documentation/finance/signedTimesheets">Signed Timesheets</a></li>
+        </ul>
+
+    </li>
+</ul>
     <div class="alert alert-info text-center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span class="text-center">Hint: Click on a banner to display each individual&nbsp; document</span></div><script>
         /*Detects when a documentation header is pressed and returns it's corresponding
         index in the array of class 'spoiler' expanding the spoiler outwards.*/
@@ -82,87 +102,90 @@
 <body>
     <div id="documentation">
 
-        <div class="documentationDesc" style="background:#444c38">
-            <div onclick="documentationHeaderPressed(0, false)" class="docHeader"> <!--Header title banner-->
-              <h3>Full Finances Spreadsheet (36 sheets)</h3>
-            </div>
-            <div class="spoiler"> <!--Class thats expanded upon 'documentationHeader' press-->
-              <div class="embed-responsive embed-responsive-4by3">
-      <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/12YRiuwRUs4VyZyv9LGgydVNZ5FYdqoGW/preview"></iframe>
-      </div>
-            </div>
-          </div>
+
     
-    <div class="documentationDesc" style="background:#0b6623">
-      <div onclick="documentationHeaderPressed(1, false)" class="docHeader"> <!--Header title banner-->
+    <div class="documentationDesc" style="background:#444c38">
+      <div onclick="documentationHeaderPressed(0, false)" class="docHeader"> <!--Header title banner-->
         <h3>Financial Business Plan</h3>
       </div>
       <div class="spoiler"> <!--Class thats expanded upon 'documentationHeader' press-->
         <div class="embed-responsive embed-responsive-4by3">
-<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1DT89wt4-UzrcmK2Aa2i5KOvkJwrpx4se/preview"></iframe>
+<iframe class="embed-responsive-item" src="./documentation/finance/financialBusinessPlans/Codev (Group 4) - Finanial Buisness Plan Version 1.1.pdf"></iframe>
 </div>
       </div>
     </div>
 
-    <div class="documentationDesc" style="background: #3f704d">
-      <div onclick="documentationHeaderPressed(2, false)" class="docHeader">
+    <div class="documentationDesc" style="background: #0b6623">
+      <div onclick="documentationHeaderPressed(1, false)" class="docHeader">
         <h3>Financial Report I</h3>
       </div>
       <div class="spoiler">
         <div class="embed-responsive embed-responsive-4by3">
-<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1tqigzKFOPTQIiFR59Wm9BDBsuOOl1tDD/preview">
+<iframe class="embed-responsive-item" src="./documentation/finance/reports/Codev (Group 4) - Financial Report I.pdf">
             </iframe>
           </div>
       </div>
     </div>
 
-    <div class="documentationDesc" style="background: #01796f">
-      <div onclick="documentationHeaderPressed(3, false)" class="docHeader">
+    <div class="documentationDesc" style="background: #3f704d">
+      <div onclick="documentationHeaderPressed(2, false)" class="docHeader">
         <h3>Financial Report II</h3>
       </div>
       <div class="spoiler">
           <div class="embed-responsive embed-responsive-4by3">
-        <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/12UsnLuwoIaALvsgQPgDh0rUcZ89b2c3i/preview"></iframe>
+        <iframe class="embed-responsive-item" src="./documentation/finance/reports/FinancialReport2-codev-SWEng-group4.pdf"></iframe>
           </div>
       </div>
     </div>
 
-    <div class="documentationDesc" style="background: #2e8b57">
-        <div onclick="documentationHeaderPressed(4, false)" class="docHeader">
+    <div class="documentationDesc" style="background: #01796f">
+        <div onclick="documentationHeaderPressed(3, false)" class="docHeader">
           <h3>Financial Report III</h3>
         </div>
         <div class="spoiler">
             <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1202bLaGVbdecWLfwoBPVOr0qGi_kAZYq/preview"></iframe>
+          <iframe class="embed-responsive-item" src="./documentation/finance/reports/CoDev (Scran Plan -  SWENG Group 4) Financial report 3.pdf"></iframe>
             </div>
         </div>
       </div>
 
-        <div class="documentationDesc" style="background: #00a86b">
-      <div onclick="documentationHeaderPressed(5, false)" class="docHeader">
+        <div class="documentationDesc" style="background: #2e8b57">
+      <div onclick="documentationHeaderPressed(4, false)" class="docHeader">
         <h3>Financial Summary</h3>
       </div>
       <div class="spoiler">
         <div class="embed-responsive embed-responsive-4by3">
-        <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1qkCzN15kbuFtSnrtTGRRD21ow1q1k3Ej/preview"></iframe>
+        <iframe class="embed-responsive-item" src="./documentation/finance/reports/CoDev Final Financial Report and Summary.pdf"></iframe>
           </div>
       </div>
     </div>
         
-    <div class="documentationDesc" style="background: #29ab87">
-      <div onclick="documentationHeaderPressed(6, false)" class="docHeader">
+    <div class="documentationDesc" style="background: #00a86b">
+      <div onclick="documentationHeaderPressed(5, false)" class="docHeader">
         <h3>Timesheets</h3>
       </div>
       <div class="spoiler">
           <ul style="list-style: none; padding-right: 65px; padding-top: 20px">
-        <li>
+          <li>
             <div class="documentationDesc" style="background: #8b8b8a">
-                <div onclick="documentationHeaderPressed(7, false)" class="docHeader">
-                  <h3>Project week 34 (May 18, 2020-May 24, 2020)</h3>
+                <div onclick="documentationHeaderPressed(6, false)" class="docHeader">
+                  <h3>Project week 36 (June 1, 2020-June 7, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/17H9GJWQr4dsyErh-6qLypJ9ctETiCFaD/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 35 (May 25, 2020-May 31, 2020).pdf"></iframe>
+                    </div>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(7, false)" class="docHeader">
+                  <h3>Project week 35 (May 25, 2020-May 31, 2020)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 35 (May 25, 2020-May 31, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -170,11 +193,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(8, false)" class="docHeader">
-                  <h3>Project week 33 (May 11, 2020-May 17, 2020)</h3>
+                  <h3>Project week 34 (May 18, 2020-May 24, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/19Y6UNGnLi9-lY3JYbtG3YD_xcpdBYO8u/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 34 (May 18, 2020-May 24, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -182,11 +205,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(9, false)" class="docHeader">
-                  <h3>Project week 32 (May 4, 2020-May 10, 2020)</h3>
+                  <h3>Project week 33 (May 11, 2020-May 17, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/19reamBLUn9YYeZ833KkvNvCOZtSH6z6x/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 33 (May 11, 2020-May 17, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -194,11 +217,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(10, false)" class="docHeader">
-                  <h3>Project week 31 (Apr. 27, 2020-May 3, 2020)</h3>
+                  <h3>Project week 32 (May 4, 2020-May 10, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1UNbDk4VYerhYQEJahrYqKdcHl0IAMpnG/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 32 (May 4, 2020-May 10, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -206,11 +229,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(11, false)" class="docHeader">
-                  <h3>Project week 30 (Apr. 20, 2020-Apr. 26, 2020)</h3>
+                  <h3>Project week 31 (Apr. 27, 2020-May 3, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1h7nn43anPfdeNvHY3QazcFYqqiZlARGA/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 31 (Apr. 27, 2020-May 3, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -218,11 +241,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(12, false)" class="docHeader">
-                  <h3>Project week 29 (Apr. 13, 2020-Apr. 19, 2020)</h3>
+                  <h3>Project week 30 (Apr. 20, 2020-Apr. 26, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/18fkJvs0im-HKKu-hNT47fv9ED1DhUBh8/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 30 (Apr. 20, 2020-Apr. 26, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -230,11 +253,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(13, false)" class="docHeader">
-                  <h3>Project week 28 (Apr. 6, 2020-Apr. 12, 2020)</h3>
+                  <h3>Project week 29 (Apr. 13, 2020-Apr. 19, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/16mrxyiW0vTmZUjFsQpgfsH3F2bJi9zZp/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 29 (Apr. 13, 2020-Apr. 19, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -242,11 +265,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(14, false)" class="docHeader">
-                  <h3>Project week 27 (Mar. 30, 2020-Apr. 5, 2020)</h3>
+                  <h3>Project week 28 (Apr. 6, 2020-Apr. 12, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/168-xeo2Dcq1MlA4-7WVi6mzhXCBRNMV4/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 28 (Apr. 6, 2020-Apr. 12, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -254,11 +277,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(15, false)" class="docHeader">
-                  <h3>Project week 26 (Mar. 23, 2020-Mar. 29, 2020)</h3>
+                  <h3>Project week 27 (Mar. 30, 2020-Apr. 5, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1y26ea9TJ99RdsEVfs33Xdy7gBvMG6nAe/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 27 (Mar. 30, 2020-Apr. 5, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -266,11 +289,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(16, false)" class="docHeader">
-                  <h3>Project week 25 (Mar. 16, 2020-Mar. 22, 2020)</h3>
+                  <h3>Project week 26 (Mar. 23, 2020-Mar. 29, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1VpfQzGUaQcYsmDwatGtCajyz6Rleovzc/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 26 (Mar. 23, 2020-Mar. 29, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -278,11 +301,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(17, false)" class="docHeader">
-                  <h3>Project week 24 (Mar. 9, 2020-Mar. 15, 2020)</h3>
+                  <h3>Project week 25 (Mar. 16, 2020-Mar. 22, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1ihxroKOmMHTWw3JJZ6wutiruyovwcxeh/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 25 (Mar. 16, 2020-Mar. 22, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -290,11 +313,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(18, false)" class="docHeader">
-                  <h3>Project week 23 (Mar. 2, 2020-Mar. 8, 2020)</h3>
+                  <h3>Project week 24 (Mar. 9, 2020-Mar. 15, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1h9JHvySU-eXUUkT615UVGL42tYywKQca/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 24 (Mar. 9, 2020-Mar. 15, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -302,11 +325,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(19, false)" class="docHeader">
-                  <h3>Project week 22 (Feb. 24, 2020-Mar. 1, 2020)</h3>
+                  <h3>Project week 23 (Mar. 2, 2020-Mar. 8, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1FbB7A7oJRp-8tzm7O6Bs5hohlSVKYdvT/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 23 (Mar. 2, 2020-Mar. 8, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -314,11 +337,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(20, false)" class="docHeader">
-                  <h3>Project week 21 (Feb. 17, 2020-Feb. 23, 2020)</h3>
+                  <h3>Project week 22 (Feb. 24, 2020-Mar. 1, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1P_xGW4gnlRleX2K233TL4BDwJ7yPfJeg/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 22 (Feb. 24, 2020-Mar. 1, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -326,11 +349,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(21, false)" class="docHeader">
-                  <h3>Project week 20 (Feb. 10, 2020-Feb. 16, 2020)</h3>
+                  <h3>Project week 21 (Feb. 17, 2020-Feb. 23, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1LWvZcHFRJ9y8Bj2uou_i6t08w8PWlsSM/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 21 (Feb. 17, 2020-Feb. 23, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -338,11 +361,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(22, false)" class="docHeader">
-                  <h3>Project week 19 (Feb. 3, 2020-Feb. 9, 2020)</h3>
+                  <h3>Project week 20 (Feb. 10, 2020-Feb. 16, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/18PgNXQSFdiecJNLo_Z3PbAbkkbTmAiSt/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 20 (Feb. 10, 2020-Feb. 16, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -350,11 +373,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(23, false)" class="docHeader">
-                  <h3>Project week 18 (Jan. 27, 2020-Feb. 2, 2020)</h3>
+                  <h3>Project week 19 (Feb. 3, 2020-Feb. 9, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1YfGcpySWNHgkcGvifAmnEIZuksEiE2WK/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 19 (Feb. 3, 2020-Feb. 9, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -362,11 +385,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(24, false)" class="docHeader">
-                  <h3>Project week 17 (Jan. 20, 2020-Jan. 26, 2020)</h3>
+                  <h3>Project week 18 (Jan. 27, 2020-Feb. 2, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/12dy-LWVjj_qT8xqRmNIBUsk3scRgUp3t/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 18 (Jan. 27, 2020-Feb. 2, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -374,11 +397,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(25, false)" class="docHeader">
-                  <h3>Project week 16 (Jan. 13, 2020-Jan. 19, 2020)</h3>
+                  <h3>Project week 17 (Jan. 20, 2020-Jan. 26, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1ofdD1AQLyQ-L0d7Xw6GOw8MSopUK83hG/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 17 (Jan. 20, 2020-Jan. 26, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -386,11 +409,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(26, false)" class="docHeader">
-                  <h3>Project week 10 (Dec. 2, 2019-Dec. 8, 2019)</h3>
+                  <h3>Project week 16 (Jan. 13, 2020-Jan. 19, 2020)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1pvJKjD39k9qSfVT2pBzXkfzfG7IiVkYH/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 16 (Jan. 13, 2020-Jan. 19, 2020).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -398,11 +421,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(27, false)" class="docHeader">
-                  <h3>Project week 9 (Nov. 25, 2019-Dec. 1, 2019)</h3>
+                  <h3>Project week 10 (Dec. 2, 2019-Dec. 8, 2019)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1i5KElzyBMRD2bkIkDY4zvHu6t3vDedWD/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 10 (Dec. 2, 2019-Dec. 8, 2019).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -410,11 +433,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(28, false)" class="docHeader">
-                  <h3>Project week 8 (Nov. 18, 2019-Nov. 24, 2019)</h3>
+                  <h3>Project week 9 (Nov. 25, 2019-Dec. 1, 2019)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iACS1JkybVZbUul_0QAl1SxQOpOCNx2C/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 9 (Nov. 25, 2019-Dec. 1, 2019).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -422,11 +445,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(29, false)" class="docHeader">
-                  <h3>Project week 7 (Nov. 11, 2019-Nov. 17, 2019)</h3>
+                  <h3>Project week 8 (Nov. 18, 2019-Nov. 24, 2019)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iC8_5GxDR87pAO4wYDkO1gGcKvx34tBX/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 8 (Nov. 18, 2019-Nov. 24, 2019).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -434,11 +457,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(30, false)" class="docHeader">
-                  <h3>Project week 6 (Nov. 4, 2019-Nov. 10, 2019)</h3>
+                  <h3>Project week 7 (Nov. 11, 2019-Nov. 17, 2019)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iCiK3-l0RGrt08ik0-fVDq0FDtZya_rP/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 7 (Nov. 11, 2019-Nov. 17, 2019).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -446,11 +469,11 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(31, false)" class="docHeader">
-                  <h3>Project week 5 (Oct. 28, 2019-Nov. 3, 2019)</h3>
+                  <h3>Project week 6 (Nov. 4, 2019-Nov. 10, 2019)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iLpPDt-jTc3ToruBg5R69D44AWtHHrbq/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 6 (Nov. 4, 2019-Nov. 10, 2019).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -458,11 +481,23 @@
         <li>
             <div class="documentationDesc" style="background: #8b8b8a">
                 <div onclick="documentationHeaderPressed(32, false)" class="docHeader">
+                  <h3>Project week 5 (Oct. 28, 2019-Nov. 3, 2019)</h3>
+                </div>
+                <div class="spoiler">
+                  <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 5 (Oct. 28, 2019-Nov. 3, 2019).pdf"></iframe>
+                    </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="documentationDesc" style="background: #8b8b8a">
+                <div onclick="documentationHeaderPressed(33, false)" class="docHeader">
                   <h3>Project week 4 (Oct. 21, 2019-Oct. 27, 2019)</h3>
                 </div>
                 <div class="spoiler">
                   <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1iDCjVvflR7IXqzMS2nd1x8whSgZ6QLgA/preview"></iframe>
+                  <iframe class="embed-responsive-item" src="./documentation/finance/signedTimesheets/Project week 4 (Oct. 21, 2019-Oct. 27, 2019).pdf"></iframe>
                     </div>
                 </div>
               </div>
@@ -473,13 +508,13 @@
         
     
         
-    <div class="documentationDesc" style="background: #50c878">
-        <div onclick="documentationHeaderPressed(33, false)" class="docHeader">
+    <div class="documentationDesc" style="background: #29ab87">
+        <div onclick="documentationHeaderPressed(34, false)" class="docHeader">
           <h3>Future Financial Plan</h3>
         </div>
         <div class="spoiler">
           <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1wGw1kfp91jO173u5vxmxYUP_LSmXGTDr/preview"></iframe>
+          <iframe class="embed-responsive-item" src="./documentation/finance/financialBusinessPlans/CoDev - FutureBusinessPlan.pdf"></iframe>
             </div>
         </div>
       </div>
@@ -505,8 +540,8 @@
             </div>
         </div>
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
